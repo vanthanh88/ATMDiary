@@ -8,20 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		FB9ECAD81E49E53F00FC4B84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9ECAD71E49E53F00FC4B84 /* AppDelegate.swift */; };
-		FB9ECADA1E49E53F00FC4B84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9ECAD91E49E53F00FC4B84 /* ViewController.swift */; };
 		FB9ECADD1E49E53F00FC4B84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9ECADB1E49E53F00FC4B84 /* Main.storyboard */; };
 		FB9ECADF1E49E53F00FC4B84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9ECADE1E49E53F00FC4B84 /* Assets.xcassets */; };
 		FB9ECAE21E49E53F00FC4B84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9ECAE01E49E53F00FC4B84 /* LaunchScreen.storyboard */; };
+		FB9ECAEC1E49E77700FC4B84 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9ECAEB1E49E77700FC4B84 /* MainController.swift */; };
+		FB9ECAEF1E49E81C00FC4B84 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9ECAED1E49E81C00FC4B84 /* CoreDataService.swift */; };
+		FB9ECAF01E49E81C00FC4B84 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9ECAEE1E49E81C00FC4B84 /* DataBaseManager.swift */; };
+		FB9ECAF31E49E9CB00FC4B84 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9ECAF21E49E9CB00FC4B84 /* Utilities.swift */; };
+		FB9ECAF61E49EB9000FC4B84 /* ATMData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB9ECAF41E49EB9000FC4B84 /* ATMData.xcdatamodeld */; };
+		FB9ECB041E49F09700FC4B84 /* ATMEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9ECB021E49F09700FC4B84 /* ATMEntity+CoreDataClass.swift */; };
+		FB9ECB051E49F09700FC4B84 /* ATMEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9ECB031E49F09700FC4B84 /* ATMEntity+CoreDataProperties.swift */; };
+		FB9ECB081E49F0FE00FC4B84 /* ATMCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9ECB071E49F0FE00FC4B84 /* ATMCell.swift */; };
+		FB9ECB0A1E49F2BC00FC4B84 /* ATMManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9ECB091E49F2BC00FC4B84 /* ATMManager.swift */; };
+		FB9ECB0C1E49FD0C00FC4B84 /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9ECB0B1E49FD0C00FC4B84 /* RoundView.swift */; };
+		FB9ECB0E1E49FF5400FC4B84 /* AddNewATMController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9ECB0D1E49FF5400FC4B84 /* AddNewATMController.swift */; };
+		FB9ECB101E4A002800FC4B84 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9ECB0F1E4A002800FC4B84 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB9ECAD41E49E53F00FC4B84 /* ATMDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATMDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9ECAD71E49E53F00FC4B84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB9ECAD91E49E53F00FC4B84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FB9ECADC1E49E53F00FC4B84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB9ECADE1E49E53F00FC4B84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB9ECAE11E49E53F00FC4B84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB9ECAE31E49E53F00FC4B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB9ECAEB1E49E77700FC4B84 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		FB9ECAED1E49E81C00FC4B84 /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		FB9ECAEE1E49E81C00FC4B84 /* DataBaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		FB9ECAF21E49E9CB00FC4B84 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		FB9ECAF51E49EB9000FC4B84 /* ATMData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ATMData.xcdatamodel; sourceTree = "<group>"; };
+		FB9ECB021E49F09700FC4B84 /* ATMEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ATMEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FB9ECB031E49F09700FC4B84 /* ATMEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ATMEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FB9ECB071E49F0FE00FC4B84 /* ATMCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMCell.swift; sourceTree = "<group>"; };
+		FB9ECB091E49F2BC00FC4B84 /* ATMManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMManager.swift; sourceTree = "<group>"; };
+		FB9ECB0B1E49FD0C00FC4B84 /* RoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
+		FB9ECB0D1E49FF5400FC4B84 /* AddNewATMController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewATMController.swift; sourceTree = "<group>"; };
+		FB9ECB0F1E4A002800FC4B84 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +76,65 @@
 		FB9ECAD61E49E53F00FC4B84 /* ATMDiary */ = {
 			isa = PBXGroup;
 			children = (
+				FB9ECB061E49F0D800FC4B84 /* Views */,
+				FB9ECAF11E49E99700FC4B84 /* Utilities */,
+				FB9ECAE91E49E64C00FC4B84 /* Controllers */,
+				FB9ECAEA1E49E64C00FC4B84 /* Database */,
 				FB9ECAD71E49E53F00FC4B84 /* AppDelegate.swift */,
-				FB9ECAD91E49E53F00FC4B84 /* ViewController.swift */,
 				FB9ECADB1E49E53F00FC4B84 /* Main.storyboard */,
 				FB9ECADE1E49E53F00FC4B84 /* Assets.xcassets */,
 				FB9ECAE01E49E53F00FC4B84 /* LaunchScreen.storyboard */,
 				FB9ECAE31E49E53F00FC4B84 /* Info.plist */,
 			);
 			path = ATMDiary;
+			sourceTree = "<group>";
+		};
+		FB9ECAE91E49E64C00FC4B84 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB9ECAEB1E49E77700FC4B84 /* MainController.swift */,
+				FB9ECB0D1E49FF5400FC4B84 /* AddNewATMController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FB9ECAEA1E49E64C00FC4B84 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				FB9ECAF71E49EBA800FC4B84 /* Entity */,
+				FB9ECAED1E49E81C00FC4B84 /* CoreDataService.swift */,
+				FB9ECAEE1E49E81C00FC4B84 /* DataBaseManager.swift */,
+				FB9ECAF41E49EB9000FC4B84 /* ATMData.xcdatamodeld */,
+				FB9ECB091E49F2BC00FC4B84 /* ATMManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		FB9ECAF11E49E99700FC4B84 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FB9ECAF21E49E9CB00FC4B84 /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FB9ECAF71E49EBA800FC4B84 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FB9ECB021E49F09700FC4B84 /* ATMEntity+CoreDataClass.swift */,
+				FB9ECB031E49F09700FC4B84 /* ATMEntity+CoreDataProperties.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FB9ECB061E49F0D800FC4B84 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB9ECB071E49F0FE00FC4B84 /* ATMCell.swift */,
+				FB9ECB0B1E49FD0C00FC4B84 /* RoundView.swift */,
+				FB9ECB0F1E4A002800FC4B84 /* CustomTextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +209,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB9ECADA1E49E53F00FC4B84 /* ViewController.swift in Sources */,
+				FB9ECB101E4A002800FC4B84 /* CustomTextField.swift in Sources */,
+				FB9ECAF01E49E81C00FC4B84 /* DataBaseManager.swift in Sources */,
+				FB9ECB0E1E49FF5400FC4B84 /* AddNewATMController.swift in Sources */,
+				FB9ECB0C1E49FD0C00FC4B84 /* RoundView.swift in Sources */,
+				FB9ECAEC1E49E77700FC4B84 /* MainController.swift in Sources */,
+				FB9ECAEF1E49E81C00FC4B84 /* CoreDataService.swift in Sources */,
+				FB9ECB051E49F09700FC4B84 /* ATMEntity+CoreDataProperties.swift in Sources */,
+				FB9ECB041E49F09700FC4B84 /* ATMEntity+CoreDataClass.swift in Sources */,
+				FB9ECAF31E49E9CB00FC4B84 /* Utilities.swift in Sources */,
+				FB9ECAF61E49EB9000FC4B84 /* ATMData.xcdatamodeld in Sources */,
+				FB9ECB081E49F0FE00FC4B84 /* ATMCell.swift in Sources */,
+				FB9ECB0A1E49F2BC00FC4B84 /* ATMManager.swift in Sources */,
 				FB9ECAD81E49E53F00FC4B84 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +385,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FB9ECAF41E49EB9000FC4B84 /* ATMData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FB9ECAF51E49EB9000FC4B84 /* ATMData.xcdatamodel */,
+			);
+			currentVersion = FB9ECAF51E49EB9000FC4B84 /* ATMData.xcdatamodel */;
+			path = ATMData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FB9ECACC1E49E53F00FC4B84 /* Project object */;
 }
