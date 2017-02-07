@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="amd-Zy-keI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="amd-Zy-keI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -27,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="-311" y="140"/>
         </scene>
-        <!--Main Controller-->
+        <!--ATM DIARY-->
         <scene sceneID="OEC-RX-NFf">
             <objects>
                 <viewController id="SXX-Fb-jxP" customClass="MainController" customModule="ATMDiary" customModuleProvider="target" sceneMemberID="viewController">
@@ -44,21 +44,19 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="0y2-I3-dme"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="SXX-Fb-jxP" id="jOr-XY-t0c"/>
+                                </connections>
                             </mapView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H1q-aP-Ycp">
                                 <rect key="frame" x="0.0" y="264" width="375" height="403"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" id="cu3-Db-754">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ATMCellIdentifier" rowHeight="77" id="OeR-PJ-jRm" customClass="ATMCell" customModule="ATMDiary" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="375" height="77"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OeR-PJ-jRm" id="zKQ-kF-2Ub">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKP-SC-9kd">
@@ -107,14 +105,14 @@
                             <constraint firstItem="H1q-aP-Ycp" firstAttribute="leading" secondItem="KqX-f9-pKi" secondAttribute="leading" id="kQx-it-jW1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="qgy-E5-vtN">
+                    <navigationItem key="navigationItem" title="ATM DIARY" id="qgy-E5-vtN">
                         <barButtonItem key="rightBarButtonItem" style="done" id="k8w-cx-atM">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="g2d-Ai-Lta">
-                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="g2d-Ai-Lta">
+                                <rect key="frame" x="329" y="7" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add New"/>
+                                <state key="normal" image="plus-circle-outline"/>
                                 <connections>
-                                    <segue destination="ZgC-iF-uE5" kind="presentation" identifier="AddNewATMSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="XfS-F4-bor"/>
+                                    <segue destination="ZgC-iF-uE5" kind="presentation" identifier="AddNewATMSegue" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="XfS-F4-bor"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -141,7 +139,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKK-dp-hgE" customClass="RoundView" customModule="ATMDiary" customModuleProvider="target">
-                                <rect key="frame" x="16" y="60" width="343" height="567"/>
+                                <rect key="frame" x="16" y="70" width="343" height="557"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add new ATM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBM-4I-znH">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="46"/>
@@ -154,9 +152,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSs-L5-nXg" customClass="CustomTextField" customModule="ATMDiary" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="66" width="327" height="44"/>
+                                        <rect key="frame" x="8" y="61" width="327" height="35"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="CDi-Tr-d1T"/>
+                                            <constraint firstAttribute="height" constant="35" id="CDi-Tr-d1T"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -174,7 +172,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Czk-am-ppJ" customClass="CustomTextField" customModule="ATMDiary" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="120" width="327" height="44"/>
+                                        <rect key="frame" x="8" y="106" width="327" height="35"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -191,10 +189,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="latitude" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C5Z-Om-aUp" customClass="CustomTextField" customModule="ATMDiary" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="174" width="327" height="44"/>
+                                        <rect key="frame" x="8" y="151" width="327" height="35"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="radius">
                                                 <real key="value" value="3"/>
@@ -208,10 +206,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Longtitude" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K6Y-nW-e8z" customClass="CustomTextField" customModule="ATMDiary" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="228" width="327" height="44"/>
+                                        <rect key="frame" x="8" y="196" width="327" height="35"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="radius">
                                                 <real key="value" value="3"/>
@@ -225,7 +223,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJo-9U-V6v">
-                                        <rect key="frame" x="8" y="295" width="327" height="44"/>
+                                        <rect key="frame" x="8" y="241" width="327" height="35"/>
                                         <state key="normal" title="Submit"/>
                                         <connections>
                                             <action selector="submit:" destination="ZgC-iF-uE5" eventType="touchUpInside" id="eXW-hS-YTM"/>
@@ -251,11 +249,11 @@
                                     <constraint firstItem="Czk-am-ppJ" firstAttribute="height" secondItem="bSs-L5-nXg" secondAttribute="height" id="XDL-aM-bKl"/>
                                     <constraint firstItem="K6Y-nW-e8z" firstAttribute="top" secondItem="C5Z-Om-aUp" secondAttribute="bottom" constant="10" id="Xzq-EM-Vvc"/>
                                     <constraint firstItem="K6Y-nW-e8z" firstAttribute="leading" secondItem="bSs-L5-nXg" secondAttribute="leading" id="ZLM-jC-LD3"/>
-                                    <constraint firstItem="KJo-9U-V6v" firstAttribute="top" secondItem="K6Y-nW-e8z" secondAttribute="bottom" constant="23" id="cbh-cf-NB4"/>
+                                    <constraint firstItem="KJo-9U-V6v" firstAttribute="top" secondItem="K6Y-nW-e8z" secondAttribute="bottom" constant="10" id="cbh-cf-NB4"/>
                                     <constraint firstItem="C5Z-Om-aUp" firstAttribute="leading" secondItem="bSs-L5-nXg" secondAttribute="leading" id="eSJ-7Z-DtH"/>
                                     <constraint firstItem="xBM-4I-znH" firstAttribute="top" secondItem="bKK-dp-hgE" secondAttribute="top" id="fH7-JG-f7T"/>
                                     <constraint firstItem="Czk-am-ppJ" firstAttribute="trailing" secondItem="bSs-L5-nXg" secondAttribute="trailing" id="jFE-PJ-1hE"/>
-                                    <constraint firstItem="bSs-L5-nXg" firstAttribute="top" secondItem="xBM-4I-znH" secondAttribute="bottom" constant="20" id="kQF-x6-DfJ"/>
+                                    <constraint firstItem="bSs-L5-nXg" firstAttribute="top" secondItem="xBM-4I-znH" secondAttribute="bottom" constant="15" id="kQF-x6-DfJ"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="radius">
@@ -264,18 +262,19 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8NQ-Sk-zNi">
-                                <rect key="frame" x="340" y="45" width="30" height="34"/>
+                                <rect key="frame" x="340" y="52.5" width="30" height="34"/>
+                                <color key="backgroundColor" red="0.29204627869999999" green="0.65247046949999998" blue="0.49190118910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="X"/>
                                 <connections>
                                     <action selector="close:" destination="ZgC-iF-uE5" eventType="touchUpInside" id="quc-zn-iV6"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="0.26887103873239437" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="0.42124229753521125" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="8NQ-Sk-zNi" secondAttribute="trailing" constant="-11" id="LMf-QW-XnY"/>
                             <constraint firstItem="6qB-XL-Aw6" firstAttribute="top" secondItem="bKK-dp-hgE" secondAttribute="bottom" constant="40" id="Mku-IC-cVg"/>
-                            <constraint firstItem="bKK-dp-hgE" firstAttribute="top" secondItem="tS9-RC-rct" secondAttribute="bottom" constant="40" id="WN9-WR-P1H"/>
+                            <constraint firstItem="bKK-dp-hgE" firstAttribute="top" secondItem="tS9-RC-rct" secondAttribute="bottom" constant="50" id="WN9-WR-P1H"/>
                             <constraint firstItem="bKK-dp-hgE" firstAttribute="leading" secondItem="8WL-hx-YP8" secondAttribute="leadingMargin" id="aEA-CF-TJ3"/>
                             <constraint firstItem="8NQ-Sk-zNi" firstAttribute="top" secondItem="bKK-dp-hgE" secondAttribute="top" multiplier="0.75" id="nwI-13-WTE"/>
                             <constraint firstItem="bKK-dp-hgE" firstAttribute="trailing" secondItem="8WL-hx-YP8" secondAttribute="trailingMargin" id="wV4-uy-GD8"/>
@@ -293,4 +292,7 @@
             <point key="canvasLocation" x="1236" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plus-circle-outline" width="16" height="16"/>
+    </resources>
 </document>

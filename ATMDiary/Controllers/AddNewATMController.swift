@@ -22,8 +22,17 @@ class AddNewATMController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        guard let latitude = mainVC?.locationManager.location?.coordinate.latitude, let longitude = mainVC?.locationManager.location?.coordinate.longitude else {
+            return
+        }
+        tfLat.text = "\(latitude)"
+        tfLong.text = "\(longitude)"
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tfName.becomeFirstResponder()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -47,11 +56,23 @@ class AddNewATMController: UIViewController {
     
     @IBAction func submit(_ sender: Any) {
         
+        guard let name = tfName.text, let address = tfAddress.text, let latText = tfLat.text, let longText = tfLong.text else {
+            return
+        }
+        
+        guard let lat = Double(latText), let long = Double(longText) else {
+            let alertVC = UIAlertController(title: nil, message: "Please enter valid coordinate.", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertVC.addAction(action)
+            present(alertVC, animated: true, completion: nil)
+            return
+        }
+        
         let newEntity = ATMManager.sharedInstance.newATM()
-        newEntity.name = tfName.text
-        newEntity.address = tfAddress.text
-        newEntity.lat = Double(tfLat.text!)!
-        newEntity.long = Double(tfLong.text!)!
+        newEntity.name = name.characters.count == 0 ? "Name Test \(arc4random()%200)" : name
+        newEntity.address = address.characters.count == 0 ? "Address Test \(arc4random()%200)" : address
+        newEntity.lat = lat
+        newEntity.long = long
         do {
             let result = try ATMManager.sharedInstance.saveData()
             if result {

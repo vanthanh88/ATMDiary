@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A066C1F1E4A28DB000166C5 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A066C1E1E4A28DB000166C5 /* CustomAnnotationView.swift */; };
+		5A066C221E4A2993000166C5 /* ATMAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A066C211E4A2993000166C5 /* ATMAnnotation.swift */; };
 		FB9ECAD81E49E53F00FC4B84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9ECAD71E49E53F00FC4B84 /* AppDelegate.swift */; };
 		FB9ECADD1E49E53F00FC4B84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9ECADB1E49E53F00FC4B84 /* Main.storyboard */; };
 		FB9ECADF1E49E53F00FC4B84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9ECADE1E49E53F00FC4B84 /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A066C1E1E4A28DB000166C5 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
+		5A066C211E4A2993000166C5 /* ATMAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMAnnotation.swift; sourceTree = "<group>"; };
 		FB9ECAD41E49E53F00FC4B84 /* ATMDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATMDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9ECAD71E49E53F00FC4B84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB9ECADC1E49E53F00FC4B84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A066C201E4A297A000166C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A066C211E4A2993000166C5 /* ATMAnnotation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		FB9ECACB1E49E53F00FC4B84 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +88,7 @@
 		FB9ECAD61E49E53F00FC4B84 /* ATMDiary */ = {
 			isa = PBXGroup;
 			children = (
+				5A066C201E4A297A000166C5 /* Models */,
 				FB9ECB061E49F0D800FC4B84 /* Views */,
 				FB9ECAF11E49E99700FC4B84 /* Utilities */,
 				FB9ECAE91E49E64C00FC4B84 /* Controllers */,
@@ -133,6 +146,7 @@
 				FB9ECB071E49F0FE00FC4B84 /* ATMCell.swift */,
 				FB9ECB0B1E49FD0C00FC4B84 /* RoundView.swift */,
 				FB9ECB0F1E4A002800FC4B84 /* CustomTextField.swift */,
+				5A066C1E1E4A28DB000166C5 /* CustomAnnotationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,6 +183,7 @@
 				TargetAttributes = {
 					FB9ECAD31E49E53F00FC4B84 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 6L2DF94YFB;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -218,9 +233,11 @@
 				FB9ECB051E49F09700FC4B84 /* ATMEntity+CoreDataProperties.swift in Sources */,
 				FB9ECB041E49F09700FC4B84 /* ATMEntity+CoreDataClass.swift in Sources */,
 				FB9ECAF31E49E9CB00FC4B84 /* Utilities.swift in Sources */,
+				5A066C221E4A2993000166C5 /* ATMAnnotation.swift in Sources */,
 				FB9ECAF61E49EB9000FC4B84 /* ATMData.xcdatamodeld in Sources */,
 				FB9ECB081E49F0FE00FC4B84 /* ATMCell.swift in Sources */,
 				FB9ECB0A1E49F2BC00FC4B84 /* ATMManager.swift in Sources */,
+				5A066C1F1E4A28DB000166C5 /* CustomAnnotationView.swift in Sources */,
 				FB9ECAD81E49E53F00FC4B84 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6L2DF94YFB;
 				INFOPLIST_FILE = ATMDiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = thanhnv.ATMDiary;
@@ -356,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6L2DF94YFB;
 				INFOPLIST_FILE = ATMDiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = thanhnv.ATMDiary;
@@ -383,6 +402,7 @@
 				FB9ECAE81E49E53F00FC4B84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
